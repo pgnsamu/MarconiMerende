@@ -16,7 +16,6 @@ struct lista: View {
     @AppStorage("email", store: .standard) var email = GIDSignIn.sharedInstance.currentUser?.profile?.email ?? ""
     @State var sivede = false
     @Environment(\.colorScheme) var colorScheme
-    //userurl.postData()
     var body: some View {
         NavigationView{
             ZStack{
@@ -30,7 +29,7 @@ struct lista: View {
                 }.listStyle(GroupedListStyle())
                 .navigationTitle("Marconi Bar")
                 .navigationBarItems(
-                    leading: /*Text(user?.profile?.name ?? "")*/
+                    leading:
                         AsyncImage(url: viewModel.GetUser()) { phase in
                                 switch phase {
                                 case .empty:
@@ -51,17 +50,12 @@ struct lista: View {
                                     // in the future:
                                     EmptyView()
                                 }
-                            }
-                        /*
-                        Button("getacc"){
-                            sivede = true
-                        }*/,
+                            },
                     trailing:
                         Button(action: {
                             viewModel.signOut()
                             riep.removeAll()
                             somma = 0
-                            //userurl.GetAuth()
                         }, label: {
                             Text("Esci")
                         })
@@ -88,8 +82,6 @@ struct lista: View {
         .onAppear(perform: {
             userurl.getData2()
             userurl.getClasse()
-            //userurl.prinT()
-            //userurl.authCheck()
         })
         .alert(isPresented: $userurl.errAcc){
             Alert(
