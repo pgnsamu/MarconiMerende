@@ -15,9 +15,6 @@ import GoogleSignIn
 
 class UserURLSession: ObservableObject, Identifiable{
     
-    
-    //@Published var responseToken: responsejwt = responsejwt(message: "placeholder", jwt: "", email: "", expireAt: 0)
-    //@Published var responseToken: String = ""
     @AppStorage("token", store: .standard) var responseToken: String = ""
     
     @Published var sivede = false
@@ -29,34 +26,31 @@ class UserURLSession: ObservableObject, Identifiable{
     let group4 = DispatchGroup() //authcheck inizio-fine
     let group5 = DispatchGroup() //
     
-    //@Published var risposta = false
     @Published var active = true
     
     var url_create = "https://merende.000webhostapp.com/merende/createauth.php"
     var url_get = "https://merende.000webhostapp.com/merende/riepilogo.php?classe="
     var url_checkB = "https://merende.000webhostapp.com/merende/auth.php?Authorization="
     var url = "https://aeminformatica.it/webservice/listamerende/"
-    var url2 = "merende.epizy.com/merende/createauth.php"
     var url_insert = "https://merende.000webhostapp.com/post2.php"
     var url_insert2 = "https://merende.000webhostapp.com/merende/post3.php"
     
     @Published var prod0tti: [prodotto] = [prodotto(id: "", des: "", price: "")]
-    var studente: utente = utente(status: 1, nome: "", cognome: "", gruppo: "", cod_organizzazione: "")
+    @Published var studente: utente = utente(status: 1, nome: "", cognome: "", gruppo: "", cod_organizzazione: "")
     
     @Published var ordini: [ordine] = [ordine(classe: "", data: "", qta: 0, serialsim: 0, nome: "", cognome: "", cod_organizzazione: 0, id: 0, IDU: 0)]
     
     @Published var msg: response2 = response2(status: 0, msg: "")
     @Published var carrello: [insert] = []
-    @Published var arrayA: [String] = []
     
     //Utilizzo token
     func prinT(){
         print(responseToken)
     }
-
+    
+    //creazione token dal server
     func GetToken(datiutente: [user]) {
         print("inizio creazione token")
-        arrayA.append("inizio creazione token")
         guard let url_create = URL(string: url_create) else {
             print("merende")
             return
@@ -135,7 +129,7 @@ class UserURLSession: ObservableObject, Identifiable{
         print(url_check)
         var request = URLRequest(url: url_check)
         request.httpMethod = "GET"
-        //print(String(data: httpbody, encoding: .utf8))
+      
         group3.enter()
         URLSession.shared.dataTask(with: request) { [self] data, response, error in
             if let data = data {
@@ -242,13 +236,6 @@ class UserURLSession: ObservableObject, Identifiable{
         carrello.append(insert(classe: studente.gruppo, id: id, qta: qta, serialsim: "00", nome: studente.nome, cognome: studente.cognome, cod_organizzazione: Int(studente.cod_organizzazione) ?? 1))
     }
     
-    /*func invio() {
-        authCheck()
-        group4.notify(queue: .main) { [self] in
-            insertData()
-        }
-        
-    }*/
     
     func insertData() {
         guard let url_insert2 = URL(string: url_insert2) else {
@@ -272,7 +259,6 @@ class UserURLSession: ObservableObject, Identifiable{
         }
 
         
-        //print(String(data: httpbody, encoding: .utf8))
         group5.enter()
         URLSession.shared.dataTask(with: request) { [self] data, response, error in
             if let data = data {
@@ -313,47 +299,7 @@ class UserURLSession: ObservableObject, Identifiable{
         }
     }
     
-    /*func insertData(){
-        guard let url_insert = URL(string: url_insert) else {
-            print("merende")
-            return
-            
-        }
-        
-        var request = URLRequest(url: url_insert)
-        request.httpMethod = "POST"
-        do {
-            let httpbody = try JSONEncoder().encode(carrello)
-            let jsonString = String(data: httpbody, encoding: .utf8)!
-            request.httpBody = httpbody
-            print(jsonString)
-        } catch {
-            print(error)
-            print("request")
-        }
-
-        
-        //print(String(data: httpbody, encoding: .utf8))
-        
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let data = data {
-                do{
-                    let result = try JSONDecoder().decode(response2.self, from: data)
-                    
-                    DispatchQueue.main.async { [self] in
-                        self.msg = result
-                        sivede = true
-                        print(result)
-                    }
-                } catch (let err) {
-                    print(err.localizedDescription)
-                }
-                
-            }else{
-                print("No data")
-            }
-        }.resume()
-    }*/
+    
     
     func getData2(){
         guard let url = URL(string: url) else {
@@ -370,12 +316,9 @@ class UserURLSession: ObservableObject, Identifiable{
         URLSession.shared.dataTask(with: request) { data, res, err in
             print("richiesta prodotti")
             if let data = data {
-                //print(String(data: data, encoding: .utf8) ?? "*")
                 do{
-                    
                     let mystring = String(data: data, encoding: .utf8)
                     let due = mystring!.dropFirst(7)
-                    //print(mystring!.dropFirst(7))
                     let data2 = Data(due.utf8)
                     let result = try JSONDecoder().decode([prodotto].self, from: data2)
                 
