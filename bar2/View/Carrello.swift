@@ -10,7 +10,6 @@ import SwiftUI
 struct Carrello: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @EnvironmentObject var userurl: UserURLSession
-    //@State var sivede = false
     var body: some View {
         if riep.count == userurl.carrello.count {
             VStack{
@@ -33,7 +32,6 @@ struct Carrello: View {
                 Text("\(String(format: "%.2f", somma)) €").bold()
                 Button {
                     userurl.invio()
-                    //userurl.insertData()
                 } label: {
                     Text("invia ordine")
                 }.padding(10.0)
