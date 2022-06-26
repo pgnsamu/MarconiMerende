@@ -1,0 +1,529 @@
+{
+"elenco": [
+        {
+            "id": "1",
+            "des": "CAFFE",
+            "price": "0.60"
+        },
+        {
+            "id": "2",
+            "des": "CAFFE RISTRETTO",
+            "price": "0.60"
+        },
+        {
+            "id": "3",
+            "des": "CAPPUCCINO",
+            "price": "0.60"
+        },
+        {
+            "id": "4",
+            "des": "CAPPUCCINO GRANDE ASPORTO",
+            "price": "1.00"
+        },
+        {
+            "id": "5",
+            "des": "CAFFE DECA",
+            "price": "1.00"
+        },
+        {
+            "id": "6",
+            "des": "CAPPUCCINO DECA",
+            "price": "1.00"
+        },
+        {
+            "id": "8",
+            "des": "GINSSENG AMARO",
+            "price": "1.00"
+        },
+        {
+            "id": "9",
+            "des": "CAPPUCCINO GINSENG",
+            "price": "1.20"
+        },
+        {
+            "id": "10",
+            "des": "ORZO",
+            "price": "0.80"
+        },
+        {
+            "id": "11",
+            "des": "ORZO GRANDE",
+            "price": "0.80"
+        },
+        {
+            "id": "12",
+            "des": "CAPPUCCINO ORZO",
+            "price": "1.00"
+        },
+        {
+            "id": "13",
+            "des": "MOCACCINO",
+            "price": "1.00"
+        },
+        {
+            "id": "14",
+            "des": "LATTE BIANCO",
+            "price": "0.60"
+        },
+        {
+            "id": "15",
+            "des": "LATTE MACCHIATO",
+            "price": "1.00"
+        },
+        {
+            "id": "16",
+            "des": "LATTE E CACAO",
+            "price": "1.00"
+        },
+        {
+            "id": "17",
+            "des": "CAFFE AMERICANO",
+            "price": "1.00"
+        },
+        {
+            "id": "18",
+            "des": "FRAPPE CIOCCOLATO",
+            "price": "2.00"
+        },
+        {
+            "id": "19",
+            "des": "FRAPPE CIOCCOLATO + PANNA",
+            "price": "2.50"
+        },
+        {
+            "id": "20",
+            "des": "SUCCO DI FRUTTA PERA",
+            "price": "1.00"
+        },
+        {
+            "id": "21",
+            "des": "SUCCO DI FRUTTA PESCA",
+            "price": "1.00"
+        },
+        {
+            "id": "24",
+            "des": "SUCCO DI FRUTTA ALBICOCCA",
+            "price": "1.00"
+        },
+        {
+            "id": "27",
+            "des": "FANTA",
+            "price": "1.00"
+        },
+        {
+            "id": "28",
+            "des": "SEVEN UP",
+            "price": "1.00"
+        },
+        {
+            "id": "29",
+            "des": "COCA COLA",
+            "price": "1.00"
+        },
+        {
+            "id": "30",
+            "des": "CAMOMILLA",
+            "price": "1.00"
+        },
+        {
+            "id": "32",
+            "des": "THE LIMONE",
+            "price": "1.00"
+        },
+        {
+            "id": "33",
+            "des": "THE PESCA",
+            "price": "1.00"
+        },
+        {
+            "id": "34",
+            "des": "THE VERDE",
+            "price": "1.00"
+        },
+        {
+            "id": "35",
+            "des": "CRODINO",
+            "price": "1.00"
+        },
+        {
+            "id": "36",
+            "des": "BITTER",
+            "price": "1.00"
+        },
+        {
+            "id": "37",
+            "des": "ACQUA LISCIA",
+            "price": "0.40"
+        },
+        {
+            "id": "38",
+            "des": "ACQUA LEGGERMENTE",
+            "price": "0.40"
+        },
+        {
+            "id": "39",
+            "des": "ACQUA GRANDE",
+            "price": "1.00"
+        },
+        {
+            "id": "40",
+            "des": "CORNETTO NUTELLA",
+            "price": "0.70"
+        },
+        {
+            "id": "41",
+            "des": "CORNETTO SEMPLICE",
+            "price": "0.70"
+        },
+        {
+            "id": "42",
+            "des": "CORNETTO MARMELLATA",
+            "price": "0.70"
+        },
+        {
+            "id": "43",
+            "des": "CORNETTO C BIANCO",
+            "price": "0.70"
+        },
+        {
+            "id": "44",
+            "des": "SACCOTTINO CIOCCOLATO",
+            "price": "0.70"
+        },
+        {
+            "id": "45",
+            "des": "CESTINO",
+            "price": "0.70"
+        },
+        {
+            "id": "46",
+            "des": "FAZOLETTO",
+            "price": "0.70"
+        },
+        {
+            "id": "47",
+            "des": "CIAMBELLA",
+            "price": "0.70"
+        },
+        {
+            "id": "48",
+            "des": "CANNOLO",
+            "price": "0.70"
+        },
+        {
+            "id": "49",
+            "des": "BOMBA CREMA",
+            "price": "0.70"
+        },
+        {
+            "id": "50",
+            "des": "BOMBA NUTELLA",
+            "price": "0.70"
+        },
+        {
+            "id": "52",
+            "des": "OCCHIO DI BUE",
+            "price": "0.60"
+        },
+        {
+            "id": "61",
+            "des": "PIZZETTA BIANCA",
+            "price": "1.00"
+        },
+        {
+            "id": "62",
+            "des": "PIZZETTA ROSSA",
+            "price": "1.20"
+        },
+        {
+            "id": "68",
+            "des": "HOTDOG",
+            "price": "2.00"
+        },
+        {
+            "id": "69",
+            "des": "HOTDOG MAIONESE",
+            "price": "2.00"
+        },
+        {
+            "id": "70",
+            "des": "HOTDOG KETCHUP",
+            "price": "2.00"
+        },
+        {
+            "id": "71",
+            "des": "HOTDOG MAIONESE+KETCHUP",
+            "price": "2.00"
+        },
+        {
+            "id": "73",
+            "des": "PANINO COTTO",
+            "price": "1.50"
+        },
+        {
+            "id": "74",
+            "des": "PANINO COTTO + FORMA",
+            "price": "1.50"
+        },
+        {
+            "id": "77",
+            "des": "PANINO WURSTEL",
+            "price": "2.00"
+        },
+        {
+            "id": "78",
+            "des": "MEZZALUNA COTTO",
+            "price": "1.50"
+        },
+        {
+            "id": "79",
+            "des": "MEZZALUNA COTTO + FORM",
+            "price": "1.50"
+        },
+        {
+            "id": "92",
+            "des": "TOAST GRANDE PCOTTO + FORM",
+            "price": "1.50"
+        },
+        {
+            "id": "94",
+            "des": "PIADINA PCOTTO + FORM",
+            "price": "2.00"
+        },
+        {
+            "id": "95",
+            "des": "PIADINA SALAME + FORM",
+            "price": "2.00"
+        },
+        {
+            "id": "96",
+            "des": "PIADINA INSALATA + POMO",
+            "price": "2.00"
+        },
+        {
+            "id": "97",
+            "des": "PIADINA INSALATA + TONNO",
+            "price": "2.00"
+        },
+        {
+            "id": "100",
+            "des": "PASTA BOSCAIOLA",
+            "price": "3.00"
+        },
+        {
+            "id": "101",
+            "des": "PASTA PESTO",
+            "price": "3.00"
+        },
+        {
+            "id": "103",
+            "des": "PASTA RAGU",
+            "price": "3.00"
+        },
+        {
+            "id": "104",
+            "des": "FARRO POM TONNO OLIVE RUGHE",
+            "price": "3.00"
+        },
+        {
+            "id": "105",
+            "des": "MEDAGLIONE HAMBURGER",
+            "price": "3.00"
+        },
+        {
+            "id": "106",
+            "des": "MEDAGL. HAMBURGER MAIO",
+            "price": "3.00"
+        },
+        {
+            "id": "107",
+            "des": "MEDAGL. HAMBURGER KETCHUP",
+            "price": "3.00"
+        },
+        {
+            "id": "108",
+            "des": "MEDAGL. HAMB. DOPPIE SALSE",
+            "price": "3.00"
+        },
+        {
+            "id": "109",
+            "des": "MEDAGL. HAMB. INSA + KETCHUP",
+            "price": "3.00"
+        },
+        {
+            "id": "110",
+            "des": "MEDAGL. HAMB. INSA + MAIO",
+            "price": "3.00"
+        },
+        {
+            "id": "111",
+            "des": "MEDAGL. HAMB. INSA + POMO",
+            "price": "3.00"
+        },
+        {
+            "id": "112",
+            "des": "MEDAGL. HAMB. INSA + POMO + SALSE",
+            "price": "3.00"
+        },
+        {
+            "id": "113",
+            "des": "MEDAGL. INSA + POMO + FORM",
+            "price": "3.00"
+        },
+        {
+            "id": "114",
+            "des": "MEDAGL. INSA + POMO + FORM + SALSE",
+            "price": "3.00"
+        },
+        {
+            "id": "115",
+            "des": "MEDAGLIONE COTOLETTA",
+            "price": "3.00"
+        },
+        {
+            "id": "116",
+            "des": "MEDAGL. COTOLETTA + KETCHUP",
+            "price": "3.00"
+        },
+        {
+            "id": "117",
+            "des": "MEDAGL. COTOLETTA + MAIO",
+            "price": "3.00"
+        },
+        {
+            "id": "118",
+            "des": "MEDAGL. COTOL + DOPPIE SALSE",
+            "price": "3.00"
+        },
+        {
+            "id": "119",
+            "des": "MEDAGL. COTOL + INSA + KETCHUP",
+            "price": "3.00"
+        },
+        {
+            "id": "120",
+            "des": "MEDAGL. COTOL + INSA + MAIO",
+            "price": "3.00"
+        },
+        {
+            "id": "121",
+            "des": "MEDAGL. COTOL + INSA + DOPPIE SALSE",
+            "price": "3.00"
+        },
+        {
+            "id": "122",
+            "des": "MEDAGL. COTOL + FORMA",
+            "price": "3.00"
+        },
+        {
+            "id": "123",
+            "des": "MEDAGL. COTOL + FORMA + MAIO",
+            "price": "3.00"
+        },
+        {
+            "id": "124",
+            "des": "MEDAGL. COTOL + FORMA + KETCHUP",
+            "price": "3.00"
+        },
+        {
+            "id": "125",
+            "des": "MEDAGL. COTOL + FORMA + DOPPIE S",
+            "price": "3.00"
+        },
+        {
+            "id": "126",
+            "des": "INSALATA HAMBURGER + PANINO",
+            "price": "5.00"
+        },
+        {
+            "id": "127",
+            "des": "INSALATA COTOLETTA + PANINO",
+            "price": "5.00"
+        },
+        {
+            "id": "128",
+            "des": "INSALATA FORMA + COTTO + PANINO",
+            "price": "5.00"
+        },
+        {
+            "id": "129",
+            "des": "INSALATA MOZZARELLA + PANINO",
+            "price": "5.00"
+        },
+        {
+            "id": "130",
+            "des": "INSALATA MOZZ + TONNO + PANINO",
+            "price": "5.00"
+        },
+        {
+            "id": "131",
+            "des": "CROCCANTELLE POLLO",
+            "price": "0.50"
+        },
+        {
+            "id": "134",
+            "des": "CROCCANTELLE BECON",
+            "price": "0.50"
+        },
+        {
+            "id": "135",
+            "des": "CROCCANTELLE KETCHUP",
+            "price": "0.50"
+        },
+        {
+            "id": "136",
+            "des": "PATATINE IN BUSTA CLASSICHE",
+            "price": "1.20"
+        },
+        {
+            "id": "140",
+            "des": "GOMME",
+            "price": "0.10"
+        },
+        {
+            "id": "141",
+            "des": "GOLEADOR FRUTTA",
+            "price": "0.10"
+        },
+        {
+            "id": "142",
+            "des": "GOLEADOR MISTERY",
+            "price": "0.10"
+        },
+        {
+            "id": "149",
+            "des": "AIR GOMME",
+            "price": "0.10"
+        },
+        {
+            "id": "155",
+            "des": "COLAZ STUDENTE: CAFFE+CORNETTO+ACQUA",
+            "price": "2.00"
+        },
+        {
+            "id": "156",
+            "des": "COLAZ STUDENTE: CAPPUCCIO+CORNETTO+ACQUA",
+            "price": "2.00"
+        },
+        {
+            "id": "157",
+            "des": "COLAZ STUDENTE: SUCCO + CORNETTO",
+            "price": "1.50"
+        },
+        {
+            "id": "158",
+            "des": "PRANZO STUDENTE: PASTA+ACQUA+CAFFE",
+            "price": "3.50"
+        },
+        {
+            "id": "160",
+            "des": "CIOCCOLATA CALDA",
+            "price": "2.00"
+        },
+        {
+            "id": "161",
+            "des": "CIOCCOLATA CALDA CON PANNA",
+            "price": "2.50"
+        }
+    ]
+}
