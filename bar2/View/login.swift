@@ -13,16 +13,7 @@ struct login: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
     @State var animation: Double = 0
     var body: some View {
-        //pagina standard del login da abbellire
         VStack{
-            /*
-            Image("logomarconi")
-                .resizable()
-                //.scaledToFit()
-                .frame(width: 200, height: 200, alignment: .center)
-                .padding(.bottom, 50)
-             */
-            
             ZStack{
                 Image("logomarconiC")
                     .resizable()
