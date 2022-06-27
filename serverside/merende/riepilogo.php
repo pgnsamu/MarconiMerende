@@ -1,5 +1,5 @@
 <?php
-    $con = new mysqli('localhost', 'id19124812_samuele', 'dSUNy1*&aMo[u^W*', 'id19124812_merende');
+    $con = new mysqli('*************', '*************', '*************', '*************');
 
     if($_SERVER['REQUEST_METHOD'] == "GET"){
 			
