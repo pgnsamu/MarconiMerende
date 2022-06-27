@@ -52,16 +52,10 @@
     <form action="index2.php" method="post" id="container"></form>
     <?php
         if(isset($_POST["finito"])){
-            //$con = new mysqli('localhost', 'id19124812_samuele', 'dSUNy1*&aMo[u^W*', 'id19124812_merende');
-            $con = new mysqli('127.0.0.1', 'root', '', 'merende2');
+            $con = new mysqli('*************', '*************', '*************', '*************');
+            //$con = new mysqli('127.0.0.1', 'root', '', 'merende2');
             $stringa_query = "UPDATE `ordini` SET `dchiusura` = NOW() WHERE `ordini`.`IDU` = ". $_POST['finito'];
             $ris = $con->query($stringa_query); //query sul db
-            /*
-            echo "<script>
-                    my_element = document.getElementById(".$_POST['finito'].");
-                    my_element.setAttribute('class','finito');
-                    document.getElementById('".$_POST['finito']."b').disabled = true;
-                </script>";*/
         }
     ?>
 </body>
