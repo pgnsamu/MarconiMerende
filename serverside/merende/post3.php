@@ -13,7 +13,7 @@
         
         if(isset($headers['authorization'])){
             $jwt = $headers['authorization'];
-            $key = "ensomma";
+            $key = ""; //secret key
             if($jwt) { 
                 try {
                     $decoded = JWT::decode($jwt, new Key($key, "HS256")); 
