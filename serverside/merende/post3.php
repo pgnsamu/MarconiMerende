@@ -5,7 +5,7 @@
     use \Firebase\JWT\Key;
 
 	//including the database connection file
-	$con = new mysqli('localhost', 'id19124812_samuele', 'dSUNy1*&aMo[u^W*', 'id19124812_merende');
+	$con = new mysqli('*************', '*************', '*************', '*************');
 	
     ini_set('display_errors', 0); 
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
