@@ -22,7 +22,7 @@
         $ris= $con->query("SELECT username FROM utenti WHERE username = '$string'"); //query sul db
         $num = $ris->num_rows;
         if($num > 0){
-            $secret_key = "ensomma";
+            $secret_key = ""; //secret key
             $issuedat_claim = time(); // issued at
             $expire_claim = $issuedat_claim + 60; // expire time in seconds
             $token = array(
